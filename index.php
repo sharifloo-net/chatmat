@@ -53,8 +53,7 @@
         </div>
         <div id="bottom-section">
             <div id="text-box-container">
-                <input type="text" name="textBox" id="text-box" placeholder="Message"
-                       value="Hello This is a chat room"></input>
+                <input type="text" name="textBox" id="text-box" placeholder="Message" value="Hello This is a chat room">
             </div>
         </div>
     </div>
