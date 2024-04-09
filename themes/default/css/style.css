@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#left-panel {
+    font-size: 1.5rem;
+    background-color: #222831;
+    display: grid;
+    height: 100%;
+    overflow: hidden;
+}
+
+.left-panel-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.left-panel-item span {
+    width: 2rem;
+}
+
+.left-panel-item:hover {
+    background-color: #424769;
+    transition: all 0.3s ease;
+}
+
+#right-panel {
+    background-color: #31363F;
+    display: grid;
+    grid-template-rows: 7fr 1fr;
+    overflow-y: auto;
+}
+
+#top-section {
+    padding: 3rem;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.right-section {
+    display: flex;
+    justify-content: end;
+}
+
+.right-message-box, .left-message-box {
+    padding: 2rem;
+    width: 30rem;
+    display: flex;
+    height: 7rem;
+    border-radius: 1.5rem;
+    background-color: #76ABAE;
+    color: #EEEEEE;
+    font-size: 1.4rem;
+}
+
+#bottom-section {
+    display: flex;
+    justify-content: center;
+
+}
+
+#text-box-container {
+    position: fixed;
+}
+
+#text-box {
+    padding: 2rem;
+    margin-bottom: 5rem;
+    width: 60rem;
+    height: 4rem;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    background-color: #EEEEEE;
+    display: flex;
+}
+
+#text-box:focus {
+    outline: none;
+}
