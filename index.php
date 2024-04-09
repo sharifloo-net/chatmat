@@ -26,27 +26,27 @@
     <div id="right-panel">
         <div id="top-section">
             <div class="right-section">
-                <div class="right-message-box">
+                <div class="message-box">
                     Hello This is a message test;
                 </div>
             </div>
             <div class="left-section">
-                <div class="left-message-box">
+                <div class="message-box">
                     Hello This is a message test;
                 </div>
             </div>
             <div class="right-section">
-                <div class="right-message-box">
+                <div class="message-box">
                     Hello This is a message test;
                 </div>
             </div>
             <div class="right-section">
-                <div class="right-message-box">
+                <div class="message-box">
                     Hello This is a message test;
                 </div>
             </div>
             <div class="left-section">
-                <div class="left-message-box">
+                <div class="message-box">
                     Hello This is a message test;
                 </div>
             </div>
