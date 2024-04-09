@@ -48,17 +48,19 @@ body, html {
 
 #right-panel {
     background-color: #31363F;
-    display: grid;
-    grid-template-rows: 7fr 1fr;
-    overflow-y: auto;
-}
-
-#top-section {
     padding: 3rem;
     min-width: 100%;
     display: flex;
     flex-direction: column;
+}
+
+.top-section {
+    display: flex;
+    flex-direction: column;
     gap: 3rem;
+    overflow-y: auto;
+    width: 100%;
+    height: 90%;
 }
 
 .right-section {
@@ -78,23 +80,24 @@ body, html {
 }
 
 #bottom-section {
-    display: flex;
-    justify-content: center;
-}
-
-#text-box-container {
     position: fixed;
+    bottom: 0;
+    width: 100%;
+    min-height: 10%;
+    display: flex;
+    align-items: end;
+    background-color: #31363F;
 }
 
 #text-box {
     padding: 2rem;
-    margin-bottom: 5rem;
-    width: 60rem;
+    width: 40%;
     height: 4rem;
     border-radius: 2rem;
     font-size: 1.3rem;
     background-color: #EEEEEE;
-    display: flex;
+    margin-left: 18rem;
+    margin-bottom: 2rem;
 }
 
 #text-box:focus {

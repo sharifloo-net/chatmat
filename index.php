@@ -24,7 +24,7 @@
         <div class="left-panel-item"><span></span>pc10</div>
     </div>
     <div id="right-panel">
-        <div id="top-section">
+        <div class="top-section">
             <div class="right-section">
                 <div class="message-box">
                     Hello This is a message test;
@@ -52,9 +52,7 @@
             </div>
         </div>
         <div id="bottom-section">
-            <div id="text-box-container">
-                <input type="text" name="textBox" id="text-box" placeholder="Message" value="Hello This is a chat room">
-            </div>
+            <input type="text" name="textBox" id="text-box" placeholder="Message" value="Hello This is a chat room">
         </div>
     </div>
 </div>
