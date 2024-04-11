@@ -31,11 +31,14 @@ body, html {
 .left-panel-item {
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     transition: all 0.3s ease;
     color: #fff;
     border-bottom: 2px solid #31363F;
+}
+
+.left-panel-item span {
+    width: 2rem;
 }
 
 .left-panel-item:hover {
@@ -43,72 +46,12 @@ body, html {
     transition: all 0.3s ease;
 }
 
-.left-offline, .left-online {
-    font-size: 1.1rem;
-    margin-right: 2.5rem;
-}
-
-.left-offline {
-    transition: all 0.5s ease;
-    color: #445069;
-}
-
-.left-panel-item:hover > .left-offline {
-    transition: all 0.5s ease;
-    color: #9DB2BF;
-}
-
-.left-online {
-    color: #4CCD99;
-}
-
 #right-panel {
     background-color: #31363F;
-    padding: 7rem 3rem 3rem 3rem;
+    padding: 3rem;
     min-width: 100%;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-}
-
-#right-header-container {
-    position: fixed;
-    left: 25vw;
-    width: 75%;
-    height: 7rem;
-    background-color: #31363F;
-    top: 0;
-}
-
-#right-header {
-    width: 70%;
-    height: 5rem;
-    background-color: #222831;
-    position: fixed;
-    top: 1rem;
-    left: 27.5vw;
-    border-radius: 2rem;
-    padding: 2rem;
-    display: flex;
-    gap: 1rem;
-}
-
-#username-right-header {
-    font-family: "Comfortaa SemiBold";
-    font-size: 1.4rem;
-    color: #EEEEEE; /* here */
-}
-
-#right-header-item-separator {
-    border-right: 2px solid #31363F;
-    height: 3.6rem;
-    position: relative;
-    bottom: 20px;
-}
-
-#left-offline {
-    color: #445069;
-    font-size: 1.1rem;
 }
 
 .top-section {
@@ -118,7 +61,6 @@ body, html {
     overflow-y: auto;
     width: 100%;
     height: 90%;
-    border-radius: 2rem;
 }
 
 .right-section {
@@ -160,10 +102,4 @@ body, html {
 
 #text-box:focus {
     outline: none;
-}
-
-.active {
-    background-color: #424769;
-    font-family: Comfortaa;
-    font-weight: 600;
 }
