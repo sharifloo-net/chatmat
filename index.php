@@ -124,7 +124,8 @@
             </div>
         </div>
         <div id="bottom-section">
-            <input type="text" name="textBox" id="text-box" placeholder="Message">
+            <div name="textBox" id="text-box" contenteditable=""></div>
+            <label for="text-box" id="text-box-placeholder">Message</label>
         </div>
     </div>
 </div>
