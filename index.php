@@ -124,8 +124,8 @@
             </div>
         </div>
         <div id="bottom-section">
-            <div name="textBox" id="text-box" contenteditable=""></div>
-            <label for="text-box" id="text-box-placeholder">Message</label>
+            <div name="textBox" id="text-box" contenteditable="" placeholder="Message"
+                 oninput="if(this.innerHTML.trim()==='<br>')this.innerHTML=''"></div>
         </div>
     </div>
 </div>

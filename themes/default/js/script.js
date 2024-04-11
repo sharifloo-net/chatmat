@@ -21,4 +21,3 @@ document.getElementById('left-panel').onclick = (e) => {
             e.target.lastElementChild.style.color = '#9DB2BF';
     }
 }
-
