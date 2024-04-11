@@ -169,16 +169,6 @@ body, html {
     outline: none;
 }
 
-/*#text-box-placeholder {*/
-/*    position: fixed;*/
-/*    font-size: 1.3rem;*/
-/*    left: 43.3%;*/
-/*    bottom: 5.2%;*/
-/*    color: #445069;*/
-/*    !* here *!*/
-/*    */
-/*}*/
-
 .active {
     background-color: #424769;
     font-family: Comfortaa;
