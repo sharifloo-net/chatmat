@@ -86,7 +86,7 @@
                 <div id="left-offline">offline</div>
             </div>
         </div>
-        <div class="top-section">
+        <div id="top-section">
             <div class="right-section">
                 <div class="message-box">
                     Hello This is a message test;

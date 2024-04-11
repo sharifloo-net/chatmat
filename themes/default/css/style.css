@@ -111,7 +111,7 @@ body, html {
     font-size: 1.1rem;
 }
 
-.top-section {
+#top-section {
     display: flex;
     flex-direction: column;
     gap: 3rem;
