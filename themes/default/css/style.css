@@ -114,6 +114,7 @@ body, html {
 
 #top-section {
     flex-direction: column;
+    justify-content: end;
     gap: 3rem;
     overflow-y: auto;
     width: 100%;
