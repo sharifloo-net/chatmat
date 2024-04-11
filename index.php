@@ -83,7 +83,7 @@
             <div class="d-flex" id="right-header">
                 <div id="username-right-header">Public</div>
                 <div id="right-header-item-separator"></div>
-                <div id="left-offline">offline</div>
+                <div id="online-status-right-header"></div>
             </div>
         </div>
         <div class="d-flex" id="top-section">
