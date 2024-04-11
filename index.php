@@ -121,6 +121,7 @@
         <div class="d-flex" id="bottom-section">
             <div name="textBox" id="text-box" contenteditable="" placeholder="Message"
                  oninput="if(this.innerHTML.trim()==='<br>')this.innerHTML=''"></div>
+            <input type="button" id="send" value="=>">
         </div>
     </div>
 </div>

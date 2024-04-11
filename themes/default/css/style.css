@@ -17,6 +17,12 @@ body, html {
     display: flex;
 }
 
+.active {
+    background-color: #424769;
+    font-family: Comfortaa;
+    font-weight: 600;
+}
+
 #container {
     width: 100%;
     height: 100%;
@@ -156,6 +162,7 @@ body, html {
     height: auto;
     align-items: end;
     background-color: #31363F;
+    gap: 2rem;
 }
 
 #text-box {
@@ -180,8 +187,12 @@ body, html {
     outline: none;
 }
 
-.active {
-    background-color: #424769;
-    font-family: Comfortaa;
-    font-weight: 600;
+#send {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 2rem;
+    background-color: #222831;
+    color: white;
+    font-weight: bold;
+    border: 2px #424769 ridge;
 }
