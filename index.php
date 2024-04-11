@@ -6,24 +6,86 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="themes/default/css/style.css">
+    <script src="themes/default/js/script.js" defer></script>
     <title>ChatMat :)</title>
 </head>
 <body>
 <div id="container">
     <div id="left-panel">
-        <div class="left-panel-item"><span></span>Public</div>
-        <div class="left-panel-item"><span></span>pc1</div>
-        <div class="left-panel-item"><span></span>pc2</div>
-        <div class="left-panel-item"><span></span>pc3</div>
-        <div class="left-panel-item"><span></span>pc4</div>
-        <div class="left-panel-item"><span></span>pc5</div>
-        <div class="left-panel-item"><span></span>pc6</div>
-        <div class="left-panel-item"><span></span>pc7</div>
-        <div class="left-panel-item"><span></span>pc8</div>
-        <div class="left-panel-item"><span></span>pc9</div>
-        <div class="left-panel-item"><span></span>pc10</div>
+        <div class="left-panel-item active">
+            <div class="left-panel-username">
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>Public</span>
+            </div>
+        </div>
+        <div class="left-panel-item">
+            <div class="left-panel-username">
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>pc1</span>
+            </div>
+            <div class="left-offline">offline</div>
+        </div>
+        <div class="left-panel-item">
+            <div class="left-panel-username">
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>pc2</span>
+            </div>
+            <div class="left-online">online</div>
+        </div>
+        <div class="left-panel-item">
+            <div class="left-panel-username">
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>pc3</span>
+            </div>
+            <div class="left-offline">offline</div>
+        </div>
+        <div class="left-panel-item">
+            <div class="left-panel-username">
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>pc4</span>
+            </div>
+            <div class="left-offline">offline</div>
+        </div>
+        <div class="left-panel-item">
+            <div class="left-panel-username">
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>pc5</span>
+            </div>
+            <div class="left-offline">offline</div>
+        </div>
+        <div class="left-panel-item">
+            <div class="left-panel-username">
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>pc6</span>
+            </div>
+            <div class="left-offline">offline</div>
+        </div>
+        <div class="left-panel-item">
+            <div class="left-panel-username">
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>pc7</span>
+            </div>
+            <div class="left-offline">offline</div>
+        </div>
+        <div class="left-panel-item">
+            <div class="left-panel-username">
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>pc8</span>
+            </div>
+            <div class="left-offline">offline</div>
+        </div>
+        <div class="left-panel-item">
+            <div class="left-panel-username">
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>pc9</span>
+            </div>
+            <div class="left-offline">offline</div>
+        </div>
+        <div class="left-panel-item">
+            <div class="left-panel-username">
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>pc10</span>
+            </div>
+            <div class="left-offline">offline</div>
+        </div>
     </div>
     <div id="right-panel">
+        <div id="right-header-container">
+            <div id="right-header">
+                <div id="username-right-header">Public</div>
+                <div id="right-header-item-separator"></div>
+                <div id="left-offline">offline</div>
+            </div>
+        </div>
         <div class="top-section">
             <div class="right-section">
                 <div class="message-box">
@@ -35,7 +97,17 @@
                     Hello This is a message test;
                 </div>
             </div>
+            <div class="left-section">
+                <div class="message-box">
+                    Hello This is a message test;
+                </div>
+            </div>
             <div class="right-section">
+                <div class="message-box">
+                    Hello This is a message test;
+                </div>
+            </div>
+            <div class="left-section">
                 <div class="message-box">
                     Hello This is a message test;
                 </div>
@@ -52,7 +124,7 @@
             </div>
         </div>
         <div id="bottom-section">
-            <input type="text" name="textBox" id="text-box" placeholder="Message" value="Hello This is a chat room">
+            <input type="text" name="textBox" id="text-box" placeholder="Message">
         </div>
     </div>
 </div>
