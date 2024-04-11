@@ -117,11 +117,6 @@
                     Hello This is a message test;
                 </div>
             </div>
-            <div class="left-section">
-                <div class="message-box">
-                    Hello This is a message test;
-                </div>
-            </div>
         </div>
         <div id="bottom-section">
             <div name="textBox" id="text-box" contenteditable="" placeholder="Message"

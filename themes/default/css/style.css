@@ -124,17 +124,29 @@ body, html {
 .right-section {
     display: flex;
     justify-content: end;
+    margin-right: 15vw;
+}
+
+.left-section {
+    display: flex;
+    margin-left: 15vw;
+}
+
+.left-section .message-box {
+    background-color: #222831;
+}
+
+.right-section .message-box {
+    background-color: #76ABAE;
 }
 
 .message-box {
-    padding: 2rem;
-    width: 30rem;
+    padding: 1rem;
+    max-width: 25rem;
     display: flex;
-    height: 7rem;
+    /*height: 6rem;*/
     border-radius: 1.5rem;
-    background-color: #76ABAE;
     color: #EEEEEE;
-    font-size: 1.4rem;
 }
 
 #bottom-section {
