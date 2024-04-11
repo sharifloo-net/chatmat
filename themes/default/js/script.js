@@ -1,8 +1,5 @@
-let leftPanelItems = document.getElementsByClassName('left-panel-item'),
-    rightHeader = document.getElementById('right-header'),
-    usernameRightHeader = document.getElementById('username-right-header'),
-    leftOffline = document.getElementById('left-offline'),
-    leftOnline = document.getElementById('left-online');
+const leftPanelItems = document.getElementsByClassName('left-panel-item'),
+    usernameRightHeader = document.getElementById('username-right-header');
 
 document.getElementById('left-panel').onclick = (e) => {
     if (e.target.className === 'left-offline' || e.target.className === 'left-online')
@@ -24,3 +21,4 @@ document.getElementById('left-panel').onclick = (e) => {
             e.target.lastElementChild.style.color = '#9DB2BF';
     }
 }
+
