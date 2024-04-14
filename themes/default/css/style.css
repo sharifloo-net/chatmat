@@ -52,6 +52,11 @@ body, html {
     transition: all 0.3s ease;
 }
 
+.left-panel-username {
+    display: flex;
+    gap: 8px;
+}
+
 .left-offline, .left-online {
     font-size: 1.1rem;
     margin-right: 2.5rem;
