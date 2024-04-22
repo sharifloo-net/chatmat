@@ -47,3 +47,7 @@ document.getElementById('left-panel').onclick = (e) => {
             e.target.closest('.left-panel-item').querySelector('.left-online-status').style.color = '#9DB2BF';
     }
 }
+
+window.oncontextmenu = (e) => {
+    e.preventDefault();
+}
