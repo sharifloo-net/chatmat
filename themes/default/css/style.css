@@ -253,3 +253,17 @@ body, html {
     background-color: #31363F;
     cursor: pointer;
 }
+
+.context-menu-icon, .context-menu-delete svg {
+    width: 20px;
+    height: 20px;
+}
+
+.context-menu-icon {
+    fill: #EEEEEE;
+}
+
+.context-menu-delete {
+    fill: #CD1818 !important;
+    color: #D83F31;
+}
