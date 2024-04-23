@@ -65,17 +65,20 @@ const contextMenus = document.querySelectorAll('.context-menu'),
     };
 
 window.oncontextmenu = (e) => {
-    if (!e.target.closest('#bottom-section')) {
+    if (e.target.closest('#bottom-section')) {
         hideContextMenus();
+    } else {
         e.preventDefault();
-        if (e.target.closest('#top-section'))
-            openMenuAt(e.clientX, e.clientY, 'right');
-        else if (e.target.closest('#left-panel') && !e.target.closest('#public-left-panel-item'))
-            openMenuAt(e.clientX, e.clientY, 'left');
+        if (!e.target.closest('.context-menu')) {
+            hideContextMenus();
+            if (e.target.closest('#top-section'))
+                openMenuAt(e.clientX, e.clientY, 'right');
+            else if (e.target.closest('#left-panel') && !e.target.closest('#public-left-panel-item'))
+                openMenuAt(e.clientX, e.clientY, 'left');
+        }
     }
 }
 
 window.onclick = (e) => {
-    if (!e.target.closest('.context-menu'))
-        hideContextMenus();
-}
+    if (!e.target.closest('.context-menu')) hideContextMenus();
+};
