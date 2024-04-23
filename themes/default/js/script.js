@@ -48,6 +48,34 @@ document.getElementById('left-panel').onclick = (e) => {
     }
 }
 
+const contextMenus = document.querySelectorAll('.context-menu'),
+    rightPanelMenu = document.getElementById('right-panel-menu'),
+    leftPanelMenu = document.getElementById('left-panel-menu'),
+    hideContextMenus = () => contextMenus.forEach((menu) => menu.style.display = 'none'),
+    openMenuAt = (x, y, panel) => {
+        if (panel === 'left') {
+            leftPanelMenu.style.display = 'inherit';
+            leftPanelMenu.style.left = `${x}px`;
+            leftPanelMenu.style.top = `${y}px`;
+        } else if (panel === 'right') {
+            rightPanelMenu.style.display = 'inherit';
+            rightPanelMenu.style.left = `${x}px`;
+            rightPanelMenu.style.top = `${y}px`;
+        } else return false;
+    };
+
 window.oncontextmenu = (e) => {
-    e.preventDefault();
+    if (!e.target.closest('#bottom-section')) {
+        hideContextMenus();
+        e.preventDefault();
+        if (e.target.closest('#top-section'))
+            openMenuAt(e.clientX, e.clientY, 'right');
+        else if (e.target.closest('#left-panel') && !e.target.closest('#public-left-panel-item'))
+            openMenuAt(e.clientX, e.clientY, 'left');
+    }
+}
+
+window.onclick = (e) => {
+    if (!e.target.closest('.context-menu'))
+        hideContextMenus();
 }

@@ -12,7 +12,7 @@
 <body>
 <div id="container">
     <div id="left-panel">
-        <div class="left-panel-item d-flex active">
+        <div class="left-panel-item d-flex active" id="public-left-panel-item">
             <div class="left-panel-username">
                 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                 <svg width="30" height="30" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -201,7 +201,7 @@
             </button>
         </div>
     </div>
-    <div id="context-menu">
+    <div class="context-menu" id="right-panel-menu">
         <ul>
             <li>
                 <div>Test1</div>
@@ -209,6 +209,13 @@
             <li>
                 <div>Test2</div>
             </li>
+            <li>
+                <div>Test3</div>
+            </li>
+        </ul>
+    </div>
+    <div class="context-menu" id="left-panel-menu">
+        <ul>
             <li>
                 <div>Test3</div>
             </li>
